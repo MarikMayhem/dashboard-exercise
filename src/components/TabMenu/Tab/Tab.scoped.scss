@@ -1,0 +1,12 @@
+@import "../../../assets/styles/variables/colors.scss";
+.transparent-button {
+    border: none;
+    background: none;
+    outline: none;
+    padding-bottom: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.active {
+    border-bottom: 3px solid $bright-red;
+}

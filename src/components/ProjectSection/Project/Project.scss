@@ -1,0 +1,61 @@
+@import "../../../assets/styles/variables/colors.scss";
+@import "../../../assets/styles/mixins/mixins.scss";
+
+.project {
+    margin: 5px auto;
+    box-shadow: 1.3px 1.3px $gray-shadow;
+    border-radius: 5px;
+    padding: 15px;
+    color: $dark-gray;
+
+    .project-title {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 0 0 35px;
+    }
+    .greyed-out {
+        color: $light-gray;
+    }
+
+    .blued-out {
+        color: $sea-blue;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .project-heading {
+        display: flex;
+        justify-content: space-between;
+    }
+    .project-information {
+        display: flex;
+        align-items: center;
+        .project-description {
+            padding: 0 15px;
+            font-size: 13px;
+            max-width: 50%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .user-avatar {
+            border-radius: 3px;
+            padding-left: 10px;
+        }
+        .project-date {
+            font-size: 13px;
+            margin-left: auto;
+        }
+        .project-icon {
+            g {
+                fill: $dark-gray;
+            }
+            width: 10px;
+        }
+        .project-icon-light {
+            g {
+                fill: $light-gray;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import "../../../assets/styles/variables/colors.scss";
+
+.search-field {
+    position: relative;
+    .search {
+        border: none;
+        outline: none;
+        padding: 10px 35px;
+        border-radius: 20px;
+        &::placeholder {
+            color: $light-gray;
+        }
+    }
+    .mag-glass {
+        position: absolute;
+        left: 0;
+        padding: 10px;
+        z-index: 2;
+        width: 15px;
+        g {
+            fill: $light-gray;
+        }
+    }
+}

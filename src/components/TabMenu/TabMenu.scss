@@ -1,0 +1,17 @@
+@import "../../assets/styles/variables/colors.scss";
+@import "../../assets/styles/mixins/mixins.scss";
+.tab-menu {
+    @include horizontal-menu;
+    @include Tablet {
+        flex-wrap: wrap-reverse;
+    }
+    width: 100%;
+    padding: 20px 0 0;
+    box-shadow: 0 1.3px $gray-shadow;
+    margin-bottom: 30px;
+    .tab-icon {
+        g {
+            fill: $light-gray;
+        }
+    }
+}

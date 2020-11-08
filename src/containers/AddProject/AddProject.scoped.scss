@@ -1,0 +1,28 @@
+@import "../../assets/styles/variables/colors.scss";
+.project-form {
+    display: flex;
+    flex-direction: column;
+
+    input,
+    select {
+        margin: 13px 0 10px 0;
+        padding: 5px;
+    }
+    textarea {
+        padding: 3px 0 40px 5px;
+    }
+    .input-error {
+        color: $bright-red;
+        color: green;
+    }
+    .submit {
+        border: 1px solid $dark-gray;
+        border-radius: 20px;
+        cursor: pointer;
+        outline: none;
+        &:hover {
+            background-color: $dark-gray;
+            color: $white;
+        }
+    }
+}

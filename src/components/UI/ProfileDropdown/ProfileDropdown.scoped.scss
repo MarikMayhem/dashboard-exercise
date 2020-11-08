@@ -1,0 +1,39 @@
+@import "../../../assets/styles/variables/colors.scss";
+
+.profile-menu-wrapper {
+    height: 40px;
+    width: 40px;
+    #menu-toggle {
+        display: none;
+    }
+    #collapsable-menu {
+        transition: transform 0.3s;
+        transform-origin: top;
+        position: relative;
+        right: 100px;
+        flex-direction: column;
+        background-color: $white;
+        border: 1px solid $dark-gray;
+        color: $dark-gray;
+        width: max-content;
+        border-radius: 5px;
+        .collapsable-item {
+            padding: 10px 77px 10px 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $dark-gray;
+                color: $white;
+            }
+        }
+    }
+    #menu-label {
+        cursor: pointer;
+    }
+    .menu-icon {
+        margin-top: 10px;
+    }
+    input:not(:checked) ~ #collapsable-menu {
+        transform: scaleY(0);
+    }
+}

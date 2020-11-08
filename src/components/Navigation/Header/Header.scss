@@ -1,0 +1,44 @@
+@import "../../../assets/styles/variables/colors.scss";
+@import "../../../assets/styles/mixins/mixins.scss";
+
+.header {
+    @include horizontal-menu;
+    @include Mobile {
+        padding: 30px 0;
+    }
+    background-color: $purple;
+    padding: 30px 5%;
+    height: fit-content;
+    align-items: center;
+
+    ul {
+        a {
+            color: $white;
+            margin: 0 2px;
+        }
+    }
+    .header-right {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 100%;
+
+        @include Tablet {
+            margin: 20px auto 0;
+        }
+        .notification {
+            margin: 0 20px;
+            g {
+                fill: $white;
+            }
+        }
+
+        &::after {
+            padding-left: 5px;
+            font-size: 15px;
+            color: white;
+            content: "\2B9F";
+        }
+    }
+}
